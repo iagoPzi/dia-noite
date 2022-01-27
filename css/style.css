@@ -36,3 +36,12 @@
     cursor: pointer;
 }
 
+@media (max-width: 600px){
+    #btn-dia{
+        font-size: 5vh;
+    }
+
+    .btn-noite{
+        font-size: 5vh;
+    }
+}
