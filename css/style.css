@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #btn-dia{
@@ -36,6 +37,23 @@
     cursor: pointer;
 }
 
+#dia p{
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#dia p::after{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 5px auto 0 auto;
+}
+
 @media (max-width: 600px){
     #btn-dia{
         font-size: 5vh;
@@ -43,5 +61,14 @@
 
     .btn-noite{
         font-size: 5vh;
+    }
+
+    #dia p{
+        font-size: 7px;
+    }
+
+    #dia p::after{
+        width: 40px;
+        height: 1px;
     }
 }
